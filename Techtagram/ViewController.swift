@@ -16,20 +16,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     //撮った画像の表示
     @IBOutlet var cameraImageView: UIImageView!
     
-    @objc var Stamp1: UIButton!
-    @objc var Stamp2: UIButton!
-    @objc var Stamp3: UIButton!
-    @objc var Stamp4: UIButton!
-    @objc var Stamp5: UIButton!
-    @objc var Stamp6: UIButton!
-    @objc var Stamp7: UIButton!
-    @objc var Stamp8: UIButton!
     
-//    // 合成画像の宣言
-//    var gousei = UIImage(named: "image.png")
-
     //スタンプ画像の名前が入った配列
-    var imageNameArray: [String] = ["face1.png", "face2.png", "face3.png", "face4.png","color1.png", "color2.png", "color3.png", "color4.png"]
+    var imageNameArray: [String] = ["stamp1.png", "stamp2.png", "stamp3.png", "stamp4.png","stamp5.png", "stamp6.png", "stamp7.png", "stamp8.png", "stamp9.png", "stamp10.png", "stamp11.png", "stamp12.png", "stamp13.png","stamp14.png", "stamp15.png", "stamp16.png", "stamp17.png", "stamp18.png","stamp19.png", "stamp20.png", "stamp21.png", "stamp22.png", "stamp23.png", "stamp24.png", "stamp25.png"]
     
     //選択しているスタンプ画像の番号
     var imageIndex: Int = 0
@@ -43,15 +32,35 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     //画像を加工するフィルターの宣言
     var filter: CIFilter!
     
+//    //ピンチジェスチャー
+//    var pinchGesture  = UIPinchGestureRecognizer()
+    
     // UIImage のインスタンスを設定
-    let image1:UIImage = UIImage(named:"face1.png")!
-    let image2:UIImage = UIImage(named:"face2.png")!
-    let image3:UIImage = UIImage(named:"face3.png")!
-    let image4:UIImage = UIImage(named:"face4.png")!
-    let image5:UIImage = UIImage(named:"color1.png")!
-    let image6:UIImage = UIImage(named:"color2.png")!
-    let image7:UIImage = UIImage(named:"color3.png")!
-    let image8:UIImage = UIImage(named:"color4.png")!
+    let image1:UIImage = UIImage(named:"stamp1.png")!
+    let image2:UIImage = UIImage(named:"stamp2.png")!
+    let image3:UIImage = UIImage(named:"stamp3.png")!
+    let image4:UIImage = UIImage(named:"stamp4.png")!
+    let image5:UIImage = UIImage(named:"stamp5.png")!
+    let image6:UIImage = UIImage(named:"stamp6.png")!
+    let image7:UIImage = UIImage(named:"stamp7.png")!
+    let image8:UIImage = UIImage(named:"stamp8.png")!
+    let image9:UIImage = UIImage(named:"stamp9.png")!
+    let image10:UIImage = UIImage(named:"stamp10.png")!
+    let image11:UIImage = UIImage(named:"stamp11.png")!
+    let image12:UIImage = UIImage(named:"stamp12.png")!
+    let image13:UIImage = UIImage(named:"stamp13.png")!
+    let image14:UIImage = UIImage(named:"stamp14.png")!
+    let image15:UIImage = UIImage(named:"stamp15.png")!
+    let image16:UIImage = UIImage(named:"stamp16.png")!
+    let image17:UIImage = UIImage(named:"stamp17.png")!
+    let image18:UIImage = UIImage(named:"stamp18.png")!
+    let image19:UIImage = UIImage(named:"stamp19.png")!
+    let image20:UIImage = UIImage(named:"stamp20.png")!
+    let image21:UIImage = UIImage(named:"stamp21.png")!
+    let image22:UIImage = UIImage(named:"stamp22.png")!
+    let image23:UIImage = UIImage(named:"stamp23.png")!
+    let image24:UIImage = UIImage(named:"stamp24.png")!
+    let image25:UIImage = UIImage(named:"stamp24.png")!
     
     // UIButton のインスタンスを生成
     let button1 = UIButton()
@@ -62,6 +71,23 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     let button6 = UIButton()
     let button7 = UIButton()
     let button8 = UIButton()
+    let button9 = UIButton()
+    let button10 = UIButton()
+    let button11 = UIButton()
+    let button12 = UIButton()
+    let button13 = UIButton()
+    let button14 = UIButton()
+    let button15 = UIButton()
+    let button16 = UIButton()
+    let button17 = UIButton()
+    let button18 = UIButton()
+    let button19 = UIButton()
+    let button20 = UIButton()
+    let button21 = UIButton()
+    let button22 = UIButton()
+    let button23 = UIButton()
+    let button24 = UIButton()
+    let button25 = UIButton()
     
 
     
@@ -90,13 +116,63 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBAction func pushStamp8(sender:UIButton) {
         imageIndex = 8
     }
+    @IBAction func pushStamp9(sender:UIButton) {
+        imageIndex = 9
+    }
+    @IBAction func pushStamp10(sender:UIButton) {
+        imageIndex = 10
+    }
+    @IBAction func pushStamp11(sender:UIButton) {
+        imageIndex = 11
+    }
+    @IBAction func pushStamp12(sender:UIButton) {
+        imageIndex = 12
+    }
+    @IBAction func pushStamp13(sender:UIButton) {
+        imageIndex = 13
+    }
+    @IBAction func pushStamp14(sender:UIButton) {
+        imageIndex = 14
+    }
+    @IBAction func pushStamp15(sender:UIButton) {
+        imageIndex = 15
+    }
+    @IBAction func pushStamp16(sender:UIButton) {
+        imageIndex = 16
+    }
+    @IBAction func pushStamp17(sender:UIButton) {
+        imageIndex = 17
+    }
+    @IBAction func pushStamp18(sender:UIButton) {
+        imageIndex = 18
+    }
+    @IBAction func pushStamp19(sender:UIButton) {
+        imageIndex = 19
+    }
+    @IBAction func pushStamp20(sender:UIButton) {
+        imageIndex = 20
+    }
+    @IBAction func pushStamp21(sender:UIButton) {
+        imageIndex = 21
+    }
+    @IBAction func pushStamp22(sender:UIButton) {
+        imageIndex = 22
+    }
+    @IBAction func pushStamp23(sender:UIButton) {
+        imageIndex = 23
+    }
+    @IBAction func pushStamp24(sender:UIButton) {
+        imageIndex = 24
+    }
+    @IBAction func pushStamp25(sender:UIButton) {
+        imageIndex = 25
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+       
         
         
         // ボタンの設置座標とサイズを設定する.
@@ -108,47 +184,126 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         button6.frame = CGRect(x: 375, y: 6, width: 50, height: 50)
         button7.frame = CGRect(x: 442, y: 6, width: 50, height: 50)
         button8.frame = CGRect(x: 515, y: 6, width: 50, height: 50)
+        button9.frame = CGRect(x: 585, y: 6, width: 50, height: 50)
+        button10.frame = CGRect(x: 665, y: 6, width: 50, height: 50)
+        button11.frame = CGRect(x: 745, y: 6, width: 50, height: 50)
+        button12.frame = CGRect(x: 825, y: 6, width: 60, height: 60)
+        button13.frame = CGRect(x: 905, y: 6, width: 60, height: 60)
+        button14.frame = CGRect(x: 985, y: 6, width: 60, height: 60)
+        button15.frame = CGRect(x: 1065, y: 5, width: 60, height: 50)
+        button16.frame = CGRect(x: 1145, y: 6, width: 60, height: 60)
+        button17.frame = CGRect(x: 1225, y: 6, width: 50, height: 50)
+        button18.frame = CGRect(x: 1305, y: 6, width: 50, height: 50)
+        button19.frame = CGRect(x: 1385, y: 6, width: 50, height: 50)
+        button20.frame = CGRect(x: 1465, y: 6, width: 50, height: 50)
+        button21.frame = CGRect(x: 1545, y: 6, width: 50, height: 50)
+        button22.frame = CGRect(x: 1625, y: 6, width: 50, height: 50)
+        button23.frame = CGRect(x: 1705, y: 6, width: 50, height: 50)
+        button24.frame = CGRect(x: 1785, y: 6, width: 50, height: 50)
+        button25.frame = CGRect(x: 1865, y: 6, width: 50, height: 50)
+        
         
         
         // button1 (buttonの画像・背景色・イベントを追加)
         button1.setImage(image1, for: .normal)
-        button1.backgroundColor = UIColor.clear
         button1.addTarget(self, action: #selector(pushStamp1(sender: )), for: .touchUpInside)
         
         // button2
         button2.setImage(image2, for: .normal)
-        button2.backgroundColor = UIColor.clear
         button2.addTarget(self, action: #selector(pushStamp2(sender: )), for: .touchUpInside)
         
         // button3
         button3.setImage(image3, for: .normal)
-        button3.backgroundColor = UIColor.clear
         button3.addTarget(self, action: #selector(pushStamp3(sender: )), for: .touchUpInside)
         
         // button4
         button4.setImage(image4, for: .normal)
-        button4.backgroundColor = UIColor.clear
         button4.addTarget(self, action: #selector(pushStamp4(sender: )), for: .touchUpInside)
         
         // button5
         button5.setImage(image5, for: .normal)
-        button5.backgroundColor = UIColor.clear
         button5.addTarget(self, action: #selector(pushStamp5(sender: )), for: .touchUpInside)
         
         // button6
         button6.setImage(image6, for: .normal)
-        button6.backgroundColor = UIColor.clear
         button6.addTarget(self, action: #selector(pushStamp6(sender: )), for: .touchUpInside)
         
         // button7
         button7.setImage(image7, for: .normal)
-        button7.backgroundColor = UIColor.clear
         button7.addTarget(self, action: #selector(pushStamp7(sender: )), for: .touchUpInside)
         
         // button8
         button8.setImage(image8, for: .normal)
-        button8.backgroundColor = UIColor.clear
         button8.addTarget(self, action: #selector(pushStamp8(sender: )), for: .touchUpInside)
+        
+        // button9
+        button9.setImage(image9, for: .normal)
+        button9.addTarget(self, action: #selector(pushStamp9(sender: )), for: .touchUpInside)
+        
+        // button10
+        button10.setImage(image10, for: .normal)
+        button10.addTarget(self, action: #selector(pushStamp10(sender: )), for: .touchUpInside)
+        
+        // button11
+        button11.setImage(image11, for: .normal)
+        button11.addTarget(self, action: #selector(pushStamp11(sender: )), for: .touchUpInside)
+        
+        // button12
+        button12.setImage(image12, for: .normal)
+        button12.addTarget(self, action: #selector(pushStamp12(sender: )), for: .touchUpInside)
+        
+        // button13
+        button13.setImage(image13, for: .normal)
+        button13.addTarget(self, action: #selector(pushStamp13(sender: )), for: .touchUpInside)
+        
+        // button14
+        button14.setImage(image14, for: .normal)
+        button14.addTarget(self, action: #selector(pushStamp14(sender: )), for: .touchUpInside)
+        
+        // button15
+        button15.setImage(image15, for: .normal)
+        button15.addTarget(self, action: #selector(pushStamp15(sender: )), for: .touchUpInside)
+        
+        // button16
+        button16.setImage(image16, for: .normal)
+        button16.addTarget(self, action: #selector(pushStamp16(sender: )), for: .touchUpInside)
+        
+        // button17
+        button17.setImage(image17, for: .normal)
+        button17.addTarget(self, action: #selector(pushStamp17(sender: )), for: .touchUpInside)
+        
+        // button18
+        button18.setImage(image18, for: .normal)
+        button18.backgroundColor = UIColor.clear
+        button18.addTarget(self, action: #selector(pushStamp18(sender: )), for: .touchUpInside)
+        
+        // button19
+        button19.setImage(image19, for: .normal)
+        button19.addTarget(self, action: #selector(pushStamp19(sender: )), for: .touchUpInside)
+        
+        // button20
+        button20.setImage(image20, for: .normal)
+        button20.addTarget(self, action: #selector(pushStamp20(sender: )), for: .touchUpInside)
+        
+        // button21
+        button21.setImage(image21, for: .normal)
+        button21.addTarget(self, action: #selector(pushStamp21(sender: )), for: .touchUpInside)
+        
+        // button22
+        button22.setImage(image22, for: .normal)
+        button22.addTarget(self, action: #selector(pushStamp22(sender: )), for: .touchUpInside)
+        
+        // button23
+        button23.setImage(image23, for: .normal)
+        button23.addTarget(self, action: #selector(pushStamp23(sender: )), for: .touchUpInside)
+        
+        // button24
+        button24.setImage(image24, for: .normal)
+        button24.addTarget(self, action: #selector(pushStamp24(sender: )), for: .touchUpInside)
+        
+        // button25
+        button25.setImage(image25, for: .normal)
+        button25.addTarget(self, action: #selector(pushStamp25(sender: )), for: .touchUpInside)
         
         
         //スクロールビューについて//
@@ -158,7 +313,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         //scrollViewの大きさを設定。
         scrollView = UIScrollView(frame: CGRect(x:0, y:600, width: 375, height: 100))
         //スクロール領域の設定
-        scrollView.contentSize = CGSize(width:self.view.frame.width * 4, height:100)
+        scrollView.contentSize = CGSize(width:self.view.frame.width * 5, height:100)
         //スクロールビューの色
         scrollView.backgroundColor = UIColor.lightGray
         //scrollViewをviewのSubViewとして追加
@@ -174,6 +329,23 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         scrollView.addSubview(button6)
         scrollView.addSubview(button7)
         scrollView.addSubview(button8)
+        scrollView.addSubview(button9)
+        scrollView.addSubview(button10)
+        scrollView.addSubview(button11)
+        scrollView.addSubview(button12)
+        scrollView.addSubview(button13)
+        scrollView.addSubview(button14)
+        scrollView.addSubview(button15)
+        scrollView.addSubview(button16)
+        scrollView.addSubview(button17)
+        scrollView.addSubview(button18)
+        scrollView.addSubview(button19)
+        scrollView.addSubview(button20)
+        scrollView.addSubview(button21)
+        scrollView.addSubview(button22)
+        scrollView.addSubview(button23)
+        scrollView.addSubview(button24)
+        scrollView.addSubview(button25)
         
         
     }
@@ -199,13 +371,14 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             let y = stampImageView.center.y
             if y < 400 {
                 self.view.addSubview(stampImageView)
-                
+//                pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(self.pincheGestureHandler))
+//                self.stampImageView.isUserInteractionEnabled = true
+//                self.stampImageView.addGestureRecognizer(pinchGesture)
             }else{
                 
             }
         }
     }
-    
     
     //Pinterest
     @IBAction func web() {
@@ -230,9 +403,20 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         }
     }
     
+    //カメラ、カメラロールを使ったときに選択した画像をアプリ内に表示するためのメソッド
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        cameraImageView.image = info[UIImagePickerControllerEditedImage] as? UIImage
+        
+        originalImage = cameraImageView.image
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     //編集した画像に保存するためのメソッド
     @IBAction func savePhoto() {
+        
         UIImageWriteToSavedPhotosAlbum(cameraImageView.image!, nil, nil, nil)
+        
     }
     
     //表示している画像にフィイルターを加工する時のメソッド
@@ -281,7 +465,11 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         present(activityViewController, animated: true, completion: nil)
     }
     
-    
+//    @objc func pincheGestureHandler(recognizer:UIPinchGestureRecognizer){
+//        self.view.bringSubview(toFront: self.stampImageView)
+//        recognizer.view?.transform = (recognizer.view?.transform)!.scaledBy(x: recognizer.scale, y: recognizer.scale)
+//        recognizer.scale = 1.0
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
