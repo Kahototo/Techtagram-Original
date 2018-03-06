@@ -18,7 +18,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     //スタンプ画像の名前が入った配列
-    var imageNameArray: [String] = ["stamp1.png", "stamp2.png", "stamp3.png", "stamp4.png","stamp5.png", "stamp6.png", "stamp7.png", "stamp8.png", "stamp9.png", "stamp10.png", "stamp11.png", "stamp12.png", "stamp13.png","stamp14.png", "stamp15.png", "stamp16.png", "stamp17.png", "stamp18.png","stamp19.png", "stamp20.png", "stamp21.png", "stamp22.png", "stamp23.png", "stamp24.png", "stamp25.png"]
+    var imageNameArray: [String] = ["stamp1.png", "stamp2.png", "stamp3.png", "stamp4.png","stamp5.png", "stamp6.png", "stamp7.png", "stamp8.png", "stamp9.png", "stamp10.png", "stamp11.png", "stamp12.png", "stamp13.png","stamp14.png", "stamp15.png", "stamp16.png", "stamp17.png", "stamp18.png","stamp19.png", "stamp20.png", "stamp21.png", "stamp22.png", "stamp23.png", "stamp24.png", "stamp25.png","stamp26.png", "stamp27.png", "stamp28.png","stamp29.png", "stamp30.png"]
     
     //選択しているスタンプ画像の番号
     var imageIndex: Int = 0
@@ -60,7 +60,13 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     let image22:UIImage = UIImage(named:"stamp22.png")!
     let image23:UIImage = UIImage(named:"stamp23.png")!
     let image24:UIImage = UIImage(named:"stamp24.png")!
-    let image25:UIImage = UIImage(named:"stamp24.png")!
+    let image25:UIImage = UIImage(named:"stamp25.png")!
+    let image26:UIImage = UIImage(named:"stamp26.png")!
+    let image27:UIImage = UIImage(named:"stamp27.png")!
+    let image28:UIImage = UIImage(named:"stamp28.png")!
+    let image29:UIImage = UIImage(named:"stamp29.png")!
+    let image30:UIImage = UIImage(named:"stamp30.png")!
+   
     
     // UIButton のインスタンスを生成
     let button1 = UIButton()
@@ -88,6 +94,11 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     let button23 = UIButton()
     let button24 = UIButton()
     let button25 = UIButton()
+    let button26 = UIButton()
+    let button27 = UIButton()
+    let button28 = UIButton()
+    let button29 = UIButton()
+    let button30 = UIButton()
     
 
     
@@ -167,6 +178,21 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBAction func pushStamp25(sender:UIButton) {
         imageIndex = 25
     }
+    @IBAction func pushStamp26(sender:UIButton) {
+        imageIndex = 26
+    }
+    @IBAction func pushStamp27(sender:UIButton) {
+        imageIndex = 27
+    }
+    @IBAction func pushStamp28(sender:UIButton) {
+        imageIndex = 28
+    }
+    @IBAction func pushStamp29(sender:UIButton) {
+        imageIndex = 29
+    }
+    @IBAction func pushStamp30(sender:UIButton) {
+        imageIndex = 30
+    }
     
     
     
@@ -176,31 +202,36 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
         
         // ボタンの設置座標とサイズを設定する.
-        button1.frame = CGRect(x: 25, y: 6, width: 50, height: 50)
-        button2.frame = CGRect(x: 94, y: 6, width: 50, height: 50)
-        button3.frame = CGRect(x: 165, y: 6, width: 50, height: 50)
-        button4.frame = CGRect(x: 235, y: 6, width: 50, height: 50)
-        button5.frame = CGRect(x: 306, y: 6, width: 50, height: 50)
-        button6.frame = CGRect(x: 375, y: 6, width: 50, height: 50)
-        button7.frame = CGRect(x: 442, y: 6, width: 50, height: 50)
-        button8.frame = CGRect(x: 515, y: 6, width: 50, height: 50)
-        button9.frame = CGRect(x: 585, y: 6, width: 50, height: 50)
-        button10.frame = CGRect(x: 665, y: 6, width: 50, height: 50)
-        button11.frame = CGRect(x: 745, y: 6, width: 50, height: 50)
-        button12.frame = CGRect(x: 825, y: 6, width: 60, height: 60)
-        button13.frame = CGRect(x: 905, y: 6, width: 60, height: 60)
-        button14.frame = CGRect(x: 985, y: 6, width: 60, height: 60)
-        button15.frame = CGRect(x: 1065, y: 5, width: 60, height: 50)
-        button16.frame = CGRect(x: 1145, y: 6, width: 60, height: 60)
-        button17.frame = CGRect(x: 1225, y: 6, width: 50, height: 50)
-        button18.frame = CGRect(x: 1305, y: 6, width: 50, height: 50)
-        button19.frame = CGRect(x: 1385, y: 6, width: 50, height: 50)
-        button20.frame = CGRect(x: 1465, y: 6, width: 50, height: 50)
-        button21.frame = CGRect(x: 1545, y: 6, width: 50, height: 50)
-        button22.frame = CGRect(x: 1625, y: 6, width: 50, height: 50)
-        button23.frame = CGRect(x: 1705, y: 6, width: 50, height: 50)
-        button24.frame = CGRect(x: 1785, y: 6, width: 50, height: 50)
-        button25.frame = CGRect(x: 1865, y: 6, width: 50, height: 50)
+        button1.frame = CGRect(x: 25, y: 20, width: 30, height: 30)
+        button2.frame = CGRect(x: 94, y: 20, width: 30, height: 30)
+        button3.frame = CGRect(x: 165, y: 20, width: 30, height: 30)
+        button4.frame = CGRect(x: 235, y: 20, width: 30, height: 30)
+        button5.frame = CGRect(x: 306, y: 20, width: 30, height: 30)
+        button6.frame = CGRect(x: 375, y: 20, width: 30, height: 30)
+        button7.frame = CGRect(x: 442, y: 20, width: 30, height: 30)
+        button8.frame = CGRect(x: 515, y: 20, width: 30, height: 30)
+        button9.frame = CGRect(x: 585, y: 20, width: 30, height: 30)
+        button10.frame = CGRect(x: 665, y: 20, width: 30, height: 30)
+        button11.frame = CGRect(x: 745, y: 20, width: 30, height: 30)
+        button12.frame = CGRect(x: 825, y: 20, width: 30, height: 30)
+        button13.frame = CGRect(x: 905, y: 20, width: 30, height: 30)
+        button14.frame = CGRect(x: 985, y: 20, width: 30, height: 30)
+        button15.frame = CGRect(x: 1065, y: 20, width: 30, height: 30)
+        button16.frame = CGRect(x: 1145, y: 20, width: 30, height: 30)
+        button17.frame = CGRect(x: 1225, y: 20, width: 30, height: 30)
+        button18.frame = CGRect(x: 1305, y: 20, width: 30, height: 30)
+        button19.frame = CGRect(x: 1385, y: 20, width: 30, height: 30)
+        button20.frame = CGRect(x: 1465, y: 20, width: 30, height: 30)
+        button21.frame = CGRect(x: 1545, y: 20, width: 30, height: 30)
+        button22.frame = CGRect(x: 1625, y: 20, width: 30, height: 30)
+        button23.frame = CGRect(x: 1705, y: 20, width: 30, height: 30)
+        button24.frame = CGRect(x: 1785, y: 20, width: 30, height: 30)
+        button25.frame = CGRect(x: 1865, y: 20, width: 30, height: 30)
+        button26.frame = CGRect(x: 1945, y: 20, width: 30, height: 30)
+        button27.frame = CGRect(x: 2025, y: 20, width: 30, height: 30)
+        button28.frame = CGRect(x: 2105, y: 20, width: 30, height: 30)
+        button29.frame = CGRect(x: 2185, y: 20, width: 30, height: 30)
+        button30.frame = CGRect(x: 2265, y: 20, width: 30, height: 30)
         
         
         
@@ -305,6 +336,26 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         button25.setImage(image25, for: .normal)
         button25.addTarget(self, action: #selector(pushStamp25(sender: )), for: .touchUpInside)
         
+        // button26
+        button26.setImage(image26, for: .normal)
+        button26.addTarget(self, action: #selector(pushStamp26(sender: )), for: .touchUpInside)
+        
+        // button27
+        button27.setImage(image27, for: .normal)
+        button27.addTarget(self, action: #selector(pushStamp27(sender: )), for: .touchUpInside)
+        
+        // button28
+        button28.setImage(image28, for: .normal)
+        button28.addTarget(self, action: #selector(pushStamp28(sender: )), for: .touchUpInside)
+        
+        // button29
+        button29.setImage(image29, for: .normal)
+        button29.addTarget(self, action: #selector(pushStamp29(sender: )), for: .touchUpInside)
+        
+        // button30
+        button30.setImage(image30, for: .normal)
+        button30.addTarget(self, action: #selector(pushStamp30(sender: )), for: .touchUpInside)
+        
         
         //スクロールビューについて//
         
@@ -313,7 +364,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         //scrollViewの大きさを設定。
         scrollView = UIScrollView(frame: CGRect(x:0, y:600, width: 375, height: 100))
         //スクロール領域の設定
-        scrollView.contentSize = CGSize(width:self.view.frame.width * 5, height:100)
+        scrollView.contentSize = CGSize(width:self.view.frame.width * 6.5, height:100)
         //スクロールビューの色
         scrollView.backgroundColor = UIColor.lightGray
         //scrollViewをviewのSubViewとして追加
@@ -346,6 +397,11 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         scrollView.addSubview(button23)
         scrollView.addSubview(button24)
         scrollView.addSubview(button25)
+        scrollView.addSubview(button26)
+        scrollView.addSubview(button27)
+        scrollView.addSubview(button28)
+        scrollView.addSubview(button29)
+        scrollView.addSubview(button30)
         
         
     }
@@ -359,7 +415,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         //もし,imageIndexが0でない　（押すスタンプが選ばれていない）とき
         if imageIndex != 0 {
             //スタンプサイズを40pxの正方形に指定（UIImageViewの位置やサイズを指定してインスタンスを作る）
-            stampImageView = UIImageView(frame: CGRect(x: 0, y:0, width: 40, height: 40))
+            stampImageView = UIImageView(frame: CGRect(x: 0, y:0, width: 60, height: 50))
             
             //押されたスタンプの画像を指定
             let image: UIImage = UIImage(named: imageNameArray[imageIndex - 1])!
